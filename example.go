@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	t "learngo/nfa/type"
+
+	t "github.com/sap200/nfa/type"
 )
 
 func main() {
@@ -11,7 +12,7 @@ func main() {
 	F := []string{"4"}
 	S := "1"
 	trans_fun := [][3]string{
-		[3]string{"1", "0", "1",},
+		[3]string{"1", "0", "1"},
 		[3]string{"1", "0", "2"},
 		[3]string{"1", "1", "1"},
 		[3]string{"1", "1", "3"},
@@ -31,5 +32,5 @@ func main() {
 			fmt.Println(seq)
 		}
 	}
-	
+
 }
